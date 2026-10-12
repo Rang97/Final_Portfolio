@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream-paper: #f1f0ee;
+  --color-pure-ink: #000000;
+  --color-charcoal-press: #252525;
+  --color-bone-gray: #dbdad9;
+
+  --font-display: "Bebas Neue", sans-serif;
+  --font-mono: "Space Mono", monospace;
+  --font-sans: "Inter", sans-serif;
+
+  --font-accent: "Handjet", sans-serif;
+}
