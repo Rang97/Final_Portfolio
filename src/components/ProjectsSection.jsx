@@ -1,5 +1,9 @@
 import { useState } from "react";
 import { projectComponents } from "./projects";
+import sajuon from "../assets/Sajuon.png";
+import cocktail from "../assets/Cocktail.png";
+import timecapsule from "../assets/Timecapsule.png";
+import blackheart from "../assets/BlackHeart.png";
 
 export default function ProjectsSection() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -12,7 +16,7 @@ export default function ProjectsSection() {
       description:
         "사주 오행을 기반으로 개인의 게임 성향을 파악한 뒤, 게임 파티를 모집하고 참여하고 파티원 간의 오행 궁합을 확인할 수 있는 사이트",
       tags: ["Spring Boot", "MySQL", "React"],
-      image: "/assets/Sajuon.png",
+      image: sajuon,
       folderBg: "bg-[#1C1C1C]",
       tabBg: "bg-[#1C1C1C]",
       textColor: "text-cream-paper",
@@ -28,7 +32,7 @@ export default function ProjectsSection() {
       description:
         "미래로 날짜를 설정한 뒤, 글을 작성하고 보관하면 설정한 날 이후로 글을 열람할 수 있는 타입캡슐 웹사이트",
       tags: ["Spring Boot", "REST API"],
-      image: "/assets/Timecapsule.png",
+      image: timecapsule,
       folderBg: "bg-[#282B30]",
       tabBg: "bg-[#282B30]",
       textColor: "text-cream-paper",
@@ -44,7 +48,7 @@ export default function ProjectsSection() {
       description:
         "CocktailDB API를 활용한 칵테일을 탐색하고 찜할 수 있는 웹사이트",
       tags: ["React", "Tailwind CSS"],
-      image: "/assets/Cocktail.png",
+      image: cocktail,
       folderBg: "bg-[#DCDAD7]",
       tabBg: "bg-[#DCDAD7]",
       textColor: "text-pure-ink",
@@ -77,7 +81,7 @@ export default function ProjectsSection() {
       description:
         "오래된 빈티지 연필과 단종된 모델을 수집하고 소개하는 독특한 감성의 '연필가게 흑심'사이트 리뉴얼 프로젝트",
       tags: ["HTML", "CSS", "JAVASCRIPT"],
-      image: "/assets/BlackHeart.png",
+      image: blackheart,
       folderBg: "bg-[#57595B]",
       tabBg: "bg-[#57595B]",
       textColor: "text-cream-paper",
@@ -162,7 +166,7 @@ export default function ProjectsSection() {
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="font-mono text-[9px] font-bold px-2 py-0.5 bg-pure-ink text-cream-paper border border-bone-gray/10 rounded-sm uppercase tracking-wider"
+                        className="font-mono text-[9px] font-bold px-2 py-0.5 bg-pure-ink text-cream-paper border border-bone-gray/10 rounded-xs uppercase tracking-wider"
                       >
                         {tag}
                       </span>

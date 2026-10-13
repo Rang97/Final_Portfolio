@@ -3,6 +3,7 @@ import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
 import Footer from "./components/Footer";
 import TechStackSection from "./components/TechStackSection";
+import DesignSection from "./components/DesignSection";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         <HeroSection />
         <AboutSection />
         <ProjectsSection />
+        <DesignSection />
         <TechStackSection />
         <Footer />
       </main>
