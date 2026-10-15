@@ -24,7 +24,7 @@ export default function Project1({ onClose }) {
             <span className="font-mono text-sm  uppercase mb-2 block text-teal-800">
               JAN 2, 2026
             </span>
-            <h2 className="font-display text-5xl sm:text-6xl md:text-7xl uppercase leading-none">
+            <h2 className="font-display text-5xl md:text-7xl uppercase leading-none">
               Saju-on
             </h2>
           </div>
