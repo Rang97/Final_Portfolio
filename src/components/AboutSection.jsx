@@ -4,7 +4,7 @@ export default function AboutSection() {
       <h3 className="font-accent font-black tracking-wide uppercase text-3xl mb-2">
         # About
       </h3>
-      <h2 className="font-sans font-extrabold text-6xl mb-10">???</h2>
+      <h2 className="font-sans font-extrabold text-6xl mb-10">소개글</h2>
       {/* LEFT COLUMN: TITLE & PROFILE IMAGE */}
       <div className="grid grid-cols-1 md:grid-cols-[360px_1fr] gap-12 mb-28">
         <div className="flex flex-col gap-6">

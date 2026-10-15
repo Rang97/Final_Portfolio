@@ -24,11 +24,11 @@ export default function Project5({ onClose }) {
       <div className="relative w-full max-w-6xl max-h-[90vh] overflow-y-auto bg-cream-paper text-pure-ink rounded-xs border-2 border-pure-ink shadow-2xl z-10 p-6 sm:p-10 md:p-12">
         <div className="flex justify-between items-center pb-6 border-b border-bone-gray/80 mb-8">
           <div className="font-sans text-sm font-bold tracking-widest text-charcoal-press uppercase">
-            ✦ 프로젝트 더보기 02
+            프로젝트 더보기 02
           </div>
           <button
             onClick={onClose}
-            className="font-sans text-sm font-bold px-3 py-1.5 bg-pure-ink text-cream-paper hover:bg-teal-300 hover:text-pure-ink transition-colors cursor-pointer uppercase tracking-wider"
+            className="font-sans text-sm font-bold px-3 py-1.5 bg-pure-ink text-cream-paper hover:bg-teal-500 hover:text-pure-ink transition-colors cursor-pointer uppercase tracking-wider"
           >
             X
           </button>
@@ -60,8 +60,10 @@ export default function Project5({ onClose }) {
         {/* 본문 */}
         <div className="space-y-6 w-full">
           <h5 className="font-sans font-bold text-lg uppercase tracking-wider mb-3 text-pure-ink">
+            <span className="text-teal-500">✦ </span>
             개발 목표
           </h5>
+
           <p className="font-sans leading-relaxed">
             칵테일에 관련된 사용자가 미래의 특정 날짜에 열어볼 수 간단한
             타입캡슐을 작성하고 보관할 수 있는 레트로 스타일의 웹
@@ -71,6 +73,7 @@ export default function Project5({ onClose }) {
           </p>
 
           <h5 className="font-sans font-bold text-lg uppercase tracking-wider mb-3 text-pure-ink">
+            <span className="text-teal-500">✦ </span>
             주요 기능
           </h5>
           <p className="font-sans leading-relaxed">
@@ -78,6 +81,7 @@ export default function Project5({ onClose }) {
           </p>
 
           <h5 className="font-sans font-bold text-lg uppercase tracking-wider mb-3 text-pure-ink">
+            <span className="text-teal-500">✦ </span>
             사용기술
           </h5>
           <div className="flex flex-wrap gap-5 border-b border-pure-ink/20">
@@ -91,7 +95,7 @@ export default function Project5({ onClose }) {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 font-sans text-base font-medium">
+          <div className="font-sans text-base font-medium">
             <p>
               1. 아이디, 비밀번호 작성 필수 <br /> 2. 로그인 시, 메인 페이지로
               이동 <br /> 3.회원이 아닐 경우, 로그인 불가, 회원 가입 후, 사이트
@@ -104,7 +108,7 @@ export default function Project5({ onClose }) {
             className="w-full h-auto border border-pure-ink/20 mb-10"
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 font-sans text-base font-semibold">
+          <div className="font-sans text-base font-medium">
             <p>
               4. 아이디, 비밀번호, 이름 작성하면 회원 가입 완료 <br /> 5. 회원
               가입 완료 후, 로그인 페이지로 이동
@@ -116,7 +120,7 @@ export default function Project5({ onClose }) {
             className="w-full h-auto border border-pure-ink/20 mb-10"
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 font-sans text-base font-semibold">
+          <div className="font-sans text-base font-medium">
             <p>
               6. 제목, 내용, 개봉일 작성 후, 보관 가능 <br /> 7. 개봉일은 오늘
               이후의 날짜로만 설정 가능
@@ -128,7 +132,7 @@ export default function Project5({ onClose }) {
             className="w-full h-auto border border-pure-ink/20 mb-10"
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 font-sans text-base font-semibold">
+          <div className="font-sans text-base font-medium">
             <p>
               8. 개봉일 전의 글은 열람 불가 <br /> 9.개봉날 당일 혹은 이후의
               글만 열람 가능
@@ -140,7 +144,7 @@ export default function Project5({ onClose }) {
             className="w-full h-auto border border-pure-ink/20 mb-10"
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 font-sans text-base font-semibold">
+          <div className="font-sans text-base font-medium">
             <p>
               10. 개봉 가능한 글 클릭 시, 팝업으로 작성한 글 확인 및 삭제 가능
             </p>
@@ -149,7 +153,7 @@ export default function Project5({ onClose }) {
           <img
             src={TC_5}
             alt=""
-            className="w-full h-auto border border-pure-ink/20 mb-10"
+            className="w-full h-auto border border-pure-ink/20 mb-1"
           />
           <img
             src={TC_6}

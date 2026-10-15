@@ -5,19 +5,17 @@ export default function Project5({ onClose }) {
   const techStack = ["HTML", "CSS", "JAVASCRIPT", "UI/UX DESIGN", "FIGMA"];
 
   return (
-    /* 1. 모달 전체 배경 (어두운 반투명 백드롭) */
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 md:p-10 bg-pure-ink/70 backdrop-blur-sm animate-fade-in">
-      {/* 배경 클릭 시 닫기 */}
       <div className="absolute inset-0" onClick={onClose} />
 
       <div className="relative w-full max-w-6xl max-h-[90vh] overflow-y-auto bg-cream-paper text-pure-ink rounded-xs border-2 border-pure-ink shadow-2xl z-10 p-6 sm:p-10 md:p-12">
         <div className="flex justify-between items-center pb-6 border-b border-bone-gray/80 mb-8">
           <div className="font-sans text-sm font-bold tracking-widest text-charcoal-press uppercase">
-            ✦ 프로젝트 더보기 05
+            프로젝트 더보기 05
           </div>
           <button
             onClick={onClose}
-            className="font-sans text-sm font-bold px-3 py-1.5 bg-pure-ink text-cream-paper hover:bg-teal-300 hover:text-pure-ink transition-colors cursor-pointer uppercase tracking-wider"
+            className="font-sans text-sm font-bold px-3 py-1.5 bg-pure-ink text-cream-paper hover:bg-teal-500 hover:text-pure-ink transition-colors cursor-pointer uppercase tracking-wider"
           >
             X
           </button>
@@ -49,6 +47,7 @@ export default function Project5({ onClose }) {
         {/* 본문 콘텐츠 (이미지 및 기획 의도/디자인 전략) */}
         <div className="space-y-6 w-full">
           <h5 className="font-sans font-bold text-lg uppercase tracking-wider mb-3 text-pure-ink">
+            <span className="text-teal-500">✦ </span>
             기획 의도
           </h5>
           <p className="font-sans leading-relaxed">
@@ -59,6 +58,7 @@ export default function Project5({ onClose }) {
           </p>
 
           <h5 className="font-sans font-bold text-lg uppercase tracking-wider mb-3 text-pure-ink">
+            <span className="text-teal-500">✦ </span>
             디자인 전략
           </h5>
           <p className="font-sans leading-relaxed">
@@ -69,6 +69,7 @@ export default function Project5({ onClose }) {
             디자인하였다.
           </p>
           <h5 className="font-sans font-bold text-lg uppercase tracking-wider mb-3 text-pure-ink">
+            <span className="text-teal-500">✦ </span>
             사용기술
           </h5>
           <div className="flex flex-wrap gap-5 border-b border-pure-ink/20">
