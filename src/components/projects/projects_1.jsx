@@ -47,7 +47,7 @@ export default function Project5({ onClose }) {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 pb-10 border-b border-bone-gray/80 mb-10">
           <div>
             <span className="font-mono text-base uppercase mb-3 block">
-              AUG 18, 2026
+              September 2026
             </span>
             <h2 className="font-sans font-bold text-5xl md:text-6xl uppercase leading-none">
               사주온 <br /> Saju - ON <br />
@@ -153,10 +153,16 @@ export default function Project5({ onClose }) {
               4. <span className="font-black">파티 페이지</span> <br />
               게임 이름, 장르, 인원수와 오행 합계 사용자 궁합을 기준을 목록 정렬
             </p>{" "}
-            <p className="mb-5">
+            <p className="mb-3">
               5. <span className="font-black">파티 생성</span> <br />
               파티 생성 시, 궁합 유형 선택 가능
             </p>
+            <div className="bg-bone-gray rounded-sm mb-10 p-3">
+              <p className="font-bold">
+                파티 생명주기 : 파티 상태와 권한을 서비스 계층에서 일관되게 관리
+              </p>
+              <p>01.생성 → 02.참여 → 03.정원 도달 → 04.이탈·강퇴 → 05.삭제</p>
+            </div>
           </div>
           <img
             src={SO_5}
@@ -169,12 +175,22 @@ export default function Project5({ onClose }) {
             className="w-full h-auto border border-pure-ink/20 mb-10"
           />{" "}
           <div className="font-sans text-base font-medium">
-            <p className="mb-5">
+            <p className="mb-3">
               6. <span className="font-black">파티의 오행 분포</span> <br />
               같은 화면에서 현재 게임과 참여자 정보 확인 가능 참여한 파티원의
               오행을 합산하여 분포 차트와 오행 수치로 파티의 성향 계산
             </p>
-            <p>
+            <div className="bg-bone-gray rounded-sm mb-10 p-3">
+              {" "}
+              <p className="font-bold">오행 궁합 계산</p>
+              <p>
+                01. 승인된 파티원의 오행 프로필 조회 <br />
+                02. 목·화·토·금·수 수치 합산 <br />
+                03. 부족한 오행과 조합 특성 반환
+              </p>
+            </div>
+
+            <p className="mb-5">
               7. <span className="font-black">실시간 채팅</span> <br />
               WebSocket과 STOMP로 파티 단위의 메시지를 구독 시스템 메시지 수신
               시 인원과 파티원 목록을 실시간으로 갱신

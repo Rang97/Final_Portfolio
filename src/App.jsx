@@ -12,7 +12,7 @@ export default function App() {
         <HeroSection />
         <AboutSection />
         <ProjectsSection />
-        <DesignSection />
+        {/* <DesignSection /> */}
         <TechStackSection />
         <Footer />
       </main>

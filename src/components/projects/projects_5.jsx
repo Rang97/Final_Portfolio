@@ -25,7 +25,7 @@ export default function Project5({ onClose }) {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 pb-10 border-b border-bone-gray/80 mb-10">
           <div>
             <span className="font-mono text-base uppercase mb-3 block">
-              AUG 18, 2026
+              FEBRUARY 2023
             </span>
             <h2 className="font-sans font-bold text-5xl md:text-6xl uppercase leading-none">
               흑심 BLACKHART <br />

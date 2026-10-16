@@ -1,3 +1,5 @@
+import profile from "../assets/profile.jpg";
+
 export default function AboutSection() {
   return (
     <section>
@@ -10,11 +12,11 @@ export default function AboutSection() {
         <div className="flex flex-col gap-6">
           {/* 프로필 이미지 영역 */}
           <div className="w-full h-[390px] bg-bone-gray rounded-sm overflow-hidden relative">
-            {/* <img 
-            src="/profile.jpg" 
-            alt="Profile" 
-            className="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-500"
-          /> */}
+            <img
+              src={profile}
+              alt="Profile"
+              className="w-full h-full object-cover contrast-125"
+            />
           </div>
         </div>
 
